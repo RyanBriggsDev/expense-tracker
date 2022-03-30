@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense tracker app</title>
+    <link rel="stylesheet" href="/styles.sass">
+</head>
+<body>
+    <main class="main">
+        <!-- title -->
+        <h1>Expense Tracker</h1>
+        <div class='contentContainer'>
+            <!-- user input -->
+            <form>
+                <input id="Amount" type="text" placeholder="You spent what?">
+                <input id="onWhat" type="text" placeholder="On what?">
+                <input type="submit" value="Panic">
+            </form>
+            <ul>
+            <!-- inputted items -->
+                <li id="userTransactionsList"><span id="inputtedAmount">£100</span> on <span id="inputtedItem"></span>chicken curry?!?</li>
+                <li id="userTransactionsList"><span id="inputtedAmount">£5000</span> on <span id="inputtedItem"></span>fuel</li>
+                <li id="userTransactionsList"><span id="inputtedAmount">£666</span> on <span id="inputtedItem"></span>the beast</li>
+            </ul>
+            <!-- total amount spent -->
+            <div class="totalContainer">
+                <h2>Total Amount Spent</h2>
+                <span id='total'>£666</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- js link -->
+    <script src="/main.js"></script>
+</body>
+</html>
