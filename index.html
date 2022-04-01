@@ -14,17 +14,17 @@
         <div class='contentContainer'>
             <!-- user input -->
             <form id="form" name="contentForm">
-                <input class="input" id="amount" type="number" placeholder="You spent what?">
-                <input class="input" id="item" type="text" placeholder="On this?">
+                <input class="input" id="amount" name="amount" type="number" placeholder="You spent what?" required>
+                <input class="input" id="item" name="item" type="text" placeholder="On this?" required>
                 <br>
                 <input type="submit" value="Calculate the damage" id='btn'>
             </form>
             <hr class="divider">
             <ul id="listedItems">
             <!-- inputted items -->
-                <li id="userTransactionsList"><span id="inputtedAmount">£100</span> on <span id="inputtedItem"></span>chicken curry</li>
+                <!-- <li id="userTransactionsList"><span id="inputtedAmount">£100</span> on <span id="inputtedItem"></span>chicken curry</li>
                 <li id="userTransactionsList"><span id="inputtedAmount">£5000</span> on <span id="inputtedItem"></span>fuel</li>
-                <li id="userTransactionsList"><span id="inputtedAmount">£666</span> on <span id="inputtedItem"></span>the beast</li>
+                <li id="userTransactionsList"><span id="inputtedAmount">£666</span> on <span id="inputtedItem"></span>the beast</li> -->
             </ul>
             <hr class="divider">
             <!-- total amount spent -->

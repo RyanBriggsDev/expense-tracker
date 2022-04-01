@@ -3,27 +3,12 @@ const btn = document.getElementById('btn');
 const form = document.getElementById('form');
 const list = document.getElementById('listedItems');
 
-// form validation
-function formValidation(e) {
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-      } else {
-          formSubmission(e);
-      }
-    }
-
 // event listener for form submit
 form.addEventListener('submit', (event) => {
     // prevent normal form submission protocol
     event.preventDefault();
-    //form validation    
-    function formValidation() {
-        const x = document.forms["myForm"]["fname"].value;
-
-      
-    // run function
-    // formSubmission(event);
+    //call form submit function
+    formSubmission();
 });
 
 // form submission function
@@ -37,4 +22,6 @@ const formSubmission = (submit) => {
     console.log("£" + amount + " on " + item);
     // clear input fields
     form.reset();
-}
+};
+
+// total spent
