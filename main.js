@@ -2,6 +2,8 @@
 const btn = document.getElementById('btn');
 const form = document.getElementById('form');
 const list = document.getElementById('listedItems');
+let total = document.getElementById("totalSpent");
+total = 0;
 
 // event listener for form submit
 form.addEventListener('submit', (event) => {
@@ -22,6 +24,7 @@ const formSubmission = (submit) => {
     console.log("£" + amount + " on " + item);
     // clear input fields
     form.reset();
+    // add amount spent to total figure
+    total = total + amount;
+    console.log(total);
 };
-
-// total spent
