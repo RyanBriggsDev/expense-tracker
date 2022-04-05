@@ -163,4 +163,12 @@ h2 {
 #totalBtn:hover {
   background-color: goldenrod;
 }
+
+#totalDisplayedText {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
 /*# sourceMappingURL=style.css.map */
