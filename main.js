@@ -1,6 +1,7 @@
 // Element Selectors
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
+const clearButton = document.getElementById("clear");
 const list = document.getElementById("listedItems");
 const totalBtn = document.getElementById("totalBtn");
 let inputtedAmounts = [];
@@ -11,6 +12,12 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   //call form submit function
   formSubmission();
+});
+
+clearButton.addEventListener("click", (e) => {
+  localStorage.removeItem("expenses");
+  displayText("0");
+  list.innerHTML = "";
 });
 
 // display total function
