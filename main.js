@@ -1,4 +1,3 @@
-// Element Selectors
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
 const clearButton = document.getElementById("clear");

@@ -9,30 +9,27 @@
   </head>
   <body>
     <main class="main">
-      <!-- title -->
       <h1>Expense Tracker</h1>
+      <form id="form" name="contentForm">
       <div class="contentContainer">
-        <!-- user input -->
-        <form id="form" name="contentForm">
-          <input
-            class="input"
-            id="amount"
-            name="amount"
-            type="number"
+        <input
+        class="input"
+        id="amount"
+        name="amount"
+        type="number"
             placeholder="You spent what?"
             required
           />
           <input class="input" id="item" name="item" type="text" placeholder="On this?" required />
           <br />
-          <input type="submit" value="Add it to the list" id="btn" />
+          <input type="submit" class="submit" value="Add it to the list" id="btn" />
         </form>
-        <button id="clear">Clear</button>
+        <button id="clear" class="clear">Clear</button>
         <hr class="divider" />
         <ul id="listedItems">
           <!-- javascript will add <li> tags with user inputted content -->
         </ul>
         <hr class="divider" />
-        <!-- total amount spent -->
         <div class="totalContainer">
           <h2>What's the damage?</h2>
           <p>£<span id="totalDisplayedText">0</span></p>
@@ -40,7 +37,6 @@
       </div>
     </main>
 
-    <!-- js link -->
     <script src="/main.js"></script>
   </body>
 </html>

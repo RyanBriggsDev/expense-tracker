@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-  color: #00A0C6;
+  color: #00a0c6;
   text-decoration: none;
   cursor: pointer;
 }
@@ -85,13 +85,39 @@ a:hover {
   text-align: center;
 }
 
-form #btn {
+.clear, .submit {
+  background-color: red;
+  border: 0.5px #292929 solid;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 100%;
+  font-weight: 500;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.submit {
+  margin-bottom: 0.5rem;
+}
+
+.clear, .submit {
   background-color: gold;
   border: 0.5px #292929 solid;
   border-radius: 5px;
   padding: 12px 20px;
   width: 100%;
   font-weight: 500;
+}
+
+.clear {
+  background-color: transparent;
+  color: white;
+  outline: 1px black solid;
+}
+
+.clear:hover {
+  background-color: black;
 }
 
 form #btn:hover {
